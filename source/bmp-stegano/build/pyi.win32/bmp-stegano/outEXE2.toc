@@ -1,0 +1,10 @@
+('bmp-stegano\\dist\\bmp-stegano.exe',
+ True,
+ False,
+ None,
+ None,
+ [],
+ False,
+ True,
+ 0,
+ 1344083974L)

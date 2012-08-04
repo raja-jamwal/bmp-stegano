@@ -1,0 +1,29 @@
+I just spent almost 2 hrs on this, I have avoided most of the error handling, I have tested it on windows xp sp2 and linux '2.6.38-8-generic' with python 2.7 
+
+BMP-stegano (steganography using BMP file)
+
+	This program is just a demonstration of steganography
+	The purpose of this program is pure academic demostration of steganography
+	Use of this program/such programs may be illegal in your country
+	Use at your own risk
+
+Author:
+	Raja Jamwal <linux1@zoho.com>
+
+Program usage:
+
+	bmp-stegano <bmp-file> <any-file> [-e]
+	bmp-file: bmp file you from which you either want to extract or embed data
+	any-file: file which you either want to extract data to or embed into BMP
+	-e: specifying -e option will extract data from bmp-file to any-file otherwise
+	    embed data from any-file to bmp-file 
+
+Current program is designed to work with only those BMP-images that don't have RGBQUAD or color table embeded in them like 24-bit DIB. The program will not try to VALIDATE the image before embeding.There is also limit of embeding file of MAX size of 2^32 bytes (4096MB) no matter what CPU (64or32bit) host system supports, this is a direct consequence of BMP file design.
+
+Standalone and installer binaries are available for windows and for all other system, python script is available.
+
+Builiding windows installer will also require NSIS script compiler.
+
+More information:
+	wiki on steganography
+	<linux1@zoho.com>
